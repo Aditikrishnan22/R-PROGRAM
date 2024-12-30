@@ -1,0 +1,19 @@
+n1<-as.integer(readline(prompt = "Enter the limit of vector1:"))
+a<-numeric(n1)
+for ( i in 1:n1 ){
+  v1<-as.integer(readline(prompt = "enter element to vector:"))
+  a[i]<-v1
+}
+print(a)  
+
+n2<-as.integer(readline(prompt = "Enter the limit of vector2:"))
+b<-numeric(n2)
+for ( i in 1:n2 ){
+  v2<-as.integer(readline(prompt = "enter element to vector2:"))
+  b[i]<-v2
+}
+print(b)
+
+
+result<-a+b
+print(result)
