@@ -1,0 +1,8 @@
+data(iris)
+subset_data<-subset(iris,Species=="setosa")
+print("Subset of iris where Species is setosa:")
+print(head(subset_data))
+
+aggregate_data<-aggregate(Sepal.Length~Species,data=iris,FUN = mean)
+print("mean sepal length for each species")
+print(aggregate_data)
