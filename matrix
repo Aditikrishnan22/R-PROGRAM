@@ -1,0 +1,26 @@
+# Get the number of rows and columns for the matrix
+nrows <- as.numeric(readline(prompt = "Enter the number of rows: "))
+ncols <- as.numeric(readline(prompt = "Enter the number of columns: "))
+
+# Initialize an empty matrix
+mt <- matrix(0, nrow = nrows, ncol = ncols)
+
+# Populate the matrix using nested for loops
+for (i in 1:nrows) {
+  for (j in 1:ncols) {
+    mt[i, j] <- as.numeric(readline(prompt = paste("Enter element at (", i, ",", j, "): ", sep = "")))
+  }
+}
+
+# Print the final matrix
+print("The final matrix is:")
+print(mt)
+
+r<-as.numeric(readline(prompt="rows:"))
+c<-as.numeric(readline(prompt = "columns:"))
+if(r<= nrows && c<=ncols){
+  e<-mt[r,c]
+  cat("element is",e)
+}else {
+  print("element not found")
+}
